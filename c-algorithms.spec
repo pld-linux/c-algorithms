@@ -2,8 +2,8 @@
 # Conditional build:
 %bcond_without	static_libs # don't build static libraries
 #
-Summary:	Collection of common Computer Science data structures and algorithms which may be used in C projects
-#Summary(pl):	-
+Summary:	Common Computer Science data structures and algorithms to use in C projects
+Summary(pl):	Popularne struktury danych i algorytmy informatyczne do u¿ywania w programach w C
 Name:		c-algorithms
 Version:	1.0.0
 Release:	0.1
@@ -21,14 +21,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Collection of common Computer Science data structures and algorithms
 which may be used in C projects.
 
-##%description -l pl
+%description -l pl
+Zbiór popularnych struktur danych i algorytmów informatycznych, które
+mo¿na wykorzystywaæ w projektach w C.
 
 %package devel
 Summary:	Header files for c-algorithms library
 Summary(pl):	Pliki nag³ówkowe biblioteki c-algorithms
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig
 
 %description devel
 Header files for c-algorithms library.
