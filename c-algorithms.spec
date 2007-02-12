@@ -3,7 +3,7 @@
 %bcond_without	static_libs # don't build static libraries
 #
 Summary:	Common Computer Science data structures and algorithms to use in C projects
-Summary(pl.UTF-8):   Popularne struktury danych i algorytmy informatyczne do używania w programach w C
+Summary(pl.UTF-8):	Popularne struktury danych i algorytmy informatyczne do używania w programach w C
 Name:		c-algorithms
 Version:	1.0.0
 Release:	0.1
@@ -27,7 +27,7 @@ można wykorzystywać w projektach w C.
 
 %package devel
 Summary:	Header files for c-algorithms library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki c-algorithms
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki c-algorithms
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -39,7 +39,7 @@ Pliki nagłówkowe biblioteki c-algorithms.
 
 %package static
 Summary:	Static c-algorithms library
-Summary(pl.UTF-8):   Statyczna biblioteka c-algorithms
+Summary(pl.UTF-8):	Statyczna biblioteka c-algorithms
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
