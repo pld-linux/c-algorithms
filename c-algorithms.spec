@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	static_libs # don't build static libraries
+%bcond_without	static_libs	# static libraries
 #
 Summary:	Common Computer Science data structures and algorithms to use in C projects
 Summary(pl.UTF-8):	Popularne struktury danych i algorytmy informatyczne do używania w programach w C
@@ -9,9 +9,9 @@ Version:	1.0.0
 Release:	0.1
 License:	BSD-like
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/c-algorithms/%{name}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/c-algorithms/%{name}-%{version}.tar.gz
 # Source0-md5:	3435f8705ff83360b48bfba61decdb7a
-URL:		http://c-algorithms.sourceforge.net/
+URL:		https://github.com/fragglet/c-algorithms
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -59,7 +59,7 @@ Statyczna biblioteka c-algorithms.
 %{__autoheader}
 %{__automake}
 %configure \
-	--enable-static=%{?with_static_libs:yes}%{!?with_static_libs:no}
+	--enable-static%{!?with_static_libs:=no}
 %{__make}
 
 %install
